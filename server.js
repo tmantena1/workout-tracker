@@ -16,10 +16,11 @@ app.use(express.static('public'))
 
 // Connect to mongoDB
 
-mongoose.connect(process.env.MONgODB_URI || "mongodb+srv://tmantena:password123!!@cluster0.e7vdf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",{
+mongoose.connect(process.env.MONgODB_URI || "mongodb+srv://tmantena:DnI3Qot3lw2f6Ja2@cluster0.e7vdf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",{
     useNewUrlParser: true
 } );
 
 app.listen(PORT, () => {
     console.log(`App running on port ${PORT}!`);
 });
+
