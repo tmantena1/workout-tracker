@@ -16,7 +16,7 @@ app.use(express.static('public'))
 
 // Connect to mongoDB
 
-mongoose.connect(process.env.MONgODB_URI || "mongodb://localhost/workoutDB",{
+mongoose.connect(process.env.MONgODB_URI || "mongodb+srv://tmantena:password123!!@cluster0.e7vdf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",{
     useNewUrlParser: true,
     useUnifiedTopolgy: true,
     useCreateIndex: true,
