@@ -17,7 +17,10 @@ app.use(express.static('public'))
 // Connect to mongoDB
 
 mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutDB",{
-    useNewUrlParser: true
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+    useFindAndModify: false
 } );
 
 app.listen(PORT, () => {
