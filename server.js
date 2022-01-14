@@ -24,6 +24,6 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workoutDB",{
 } );
 
 app.listen(PORT, () => {
-    console.log(`App running on port ${PORT}!`);
+    console.log(process.env.port || 3001);
 });
 
